@@ -1,0 +1,22 @@
+device_type:
+- manufacturer: Synology
+  model: DS1019+
+  slug: synology-ds1019-plus
+  part_number: DS1019+
+  u_height: 4
+  comments: '[Synology DS1019+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/DiskStation/19-year/DS1019+/ger/Synology_DS1019_Plus_Data_Sheet_ger.pdf)'
+  is_full_depth: false
+console_ports: []
+interfaces:
+- device_type: synology-ds1019-plus
+  name: LAN 1
+  type: 1000base-t
+- device_type: synology-ds1019-plus
+  name: LAN 2
+  type: 1000base-t
+rear_ports: []
+front_ports: []
+power_ports:
+- device_type: synology-ds1019-plus
+  name: PSU
+  type: dc-terminal

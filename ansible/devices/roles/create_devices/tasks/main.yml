@@ -1,0 +1,11 @@
+---
+- name: Create Racks within NetBox
+  netbox.netbox.netbox_rack:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ rack }}"
+    state: present
+  loop: "{{ racks }}"
+  loop_control: 
+    loop_var: rack
+    label: "{{ rack['name']}}"

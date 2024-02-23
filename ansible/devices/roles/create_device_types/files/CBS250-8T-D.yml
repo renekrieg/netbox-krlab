@@ -1,0 +1,41 @@
+device_type:
+- manufacturer: Cisco
+  model: CBS250-8T-D
+  slug: cisco-cbs250-8t-d
+  part_number: CBS250-8T-D
+  comments: https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.html
+  u_height: 0
+  is_full_depth: false
+console_ports: []
+interfaces:
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet1
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet2
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet3
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet4
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet5
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet6
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet7
+  type: 1000base-t
+- device_type: cisco-cbs250-8t-d
+  name: GigabitEthernet8
+  type: 1000base-t
+rear_ports: []
+front_ports: []
+power_ports:
+- device_type: cisco-cbs250-8t-d
+  name: PSU0
+  type: iec-60320-c14
+  maximum_draw: 8

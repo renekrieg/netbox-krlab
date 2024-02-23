@@ -1,0 +1,71 @@
+device_type:
+- manufacturer: TP-Link
+  model: TL-SG2218
+  slug: tp-link-tl-sg3424p
+  part_number: TL-SG2218
+  comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/omada-switch-smart/tl-sg2218/#specifications)'
+  is_full_depth: false
+  u_height: 1
+console_ports: []
+interfaces:
+- device_type: tp-link-tl-sg3424p
+  name: '1'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '2'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '3'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '4'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '5'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '6'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '7'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '8'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '9'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '10'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '11'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '12'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '13'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '14'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '15'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '16'
+  type: 1000base-t
+- device_type: tp-link-tl-sg3424p
+  name: '17'
+  type: 1000base-x-sfp
+- device_type: tp-link-tl-sg3424p
+  name: '18'
+  type: 1000base-x-sfp
+rear_ports: []
+front_ports: []
+power_ports:
+- device_type: tp-link-tl-sg3424p
+  name: PS1
+  type: iec-60320-c14
+  maximum_draw: 12

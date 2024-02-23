@@ -1,0 +1,20 @@
+---
+manufacturers:
+
+  - name: Cisco
+
+  - name: Draytek
+
+  - name: Hikvision
+
+  - name: Linksys
+
+  - name: Metz Connect
+
+  - name: MikroTik
+
+  - name: Netgear
+
+  - name: Synology
+
+  - name: TP-Link

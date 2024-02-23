@@ -1,0 +1,4 @@
+---
+netbox_url: "{{ nb_url | default(lookup('.env', 'NETBOX_API') }}"
+netbox_token: "{{ nb_token | default(lookup('.env',  'NETBOX_TOKEN') }}"
+template_root: "{{ template_dir | default('../templates/device-types/') }}"

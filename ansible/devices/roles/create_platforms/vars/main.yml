@@ -1,0 +1,8 @@
+---
+platforms:
+
+  - name: Cisco OS SMB Switches
+    manufacturer: Cisco
+
+  - name: Mikrotik RouterOS
+    manufacturer: MikroTik

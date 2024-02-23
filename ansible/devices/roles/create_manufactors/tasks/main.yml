@@ -1,0 +1,11 @@
+---
+- name: Create Manufacturer within NetBox
+  netbox.netbox.netbox_manufacturer:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ manufacturer }}"
+    state: present
+  loop: "{{ manufacturers }}"
+  loop_control: 
+    loop_var: manufacturer
+    label: "{{ manufacturer['name']}}"

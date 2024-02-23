@@ -1,0 +1,31 @@
+device_type:
+- manufacturer: Synology
+  model: RS1221+
+  slug: synology-rs1221-plus
+  part_number: RS1221+
+  u_height: 2
+  is_full_depth: true
+  comments: '[Synology RS1221+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/RackStation/21-year/RS1221%2B/ger/Synology_RS1221%2B_Data_Sheet_ger.pdf)'
+console_ports:
+- device_type: synology-rs1221-plus
+  name: Serial
+  type: de-9
+interfaces:
+- device_type: synology-rs1221-plus
+  name: LAN 1
+  type: 1000base-t
+- device_type: synology-rs1221-plus
+  name: LAN 2
+  type: 1000base-t
+- device_type: synology-rs1221-plus
+  name: LAN 3
+  type: 1000base-t
+- device_type: synology-rs1221-plus
+  name: LAN 4
+  type: 1000base-t
+rear_ports: []
+front_ports: []
+power_ports:
+- device_type: synology-rs1221-plus
+  name: PSU 1
+  type: iec-60320-c14

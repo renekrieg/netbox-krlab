@@ -1,0 +1,48 @@
+device_type:
+- manufacturer: MikroTik
+  model: CRS310-8G+2S+IN
+  slug: mikrotik-crs310-8g-plus-2s-plus-in
+  part_number: CRS310-8G+2S+IN
+  is_full_depth: false
+  comments: https://mikrotik.com/product/crs310_8g_2s_in
+  u_height: 1
+  airflow: front-to-rear
+console_ports: []
+interfaces:
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether1
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether2
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether3
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether4
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether5
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether6
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether7
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: ether8
+  type: 2.5gbase-t
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: sfp-sfpplus1
+  type: 10gbase-x-sfpp
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: sfp-sfpplus2
+  type: 10gbase-x-sfpp
+rear_ports: []
+front_ports: []
+power_ports:
+- device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  name: power1
+  type: iec-60320-c14
+  maximum_draw: 34

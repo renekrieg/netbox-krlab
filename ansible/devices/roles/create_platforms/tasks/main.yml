@@ -1,0 +1,11 @@
+---
+- name: Create Platforms within NetBox
+  netbox.netbox.netbox_platform:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ platform }}"
+    state: present
+  loop: "{{ platforms }}"
+  loop_control: 
+    loop_var: platform
+    label: "{{ platform['name']}}"

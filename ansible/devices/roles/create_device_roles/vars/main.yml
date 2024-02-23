@@ -1,0 +1,20 @@
+---
+device_roles:
+
+  - name: Access Switch
+    color: 8bc34a
+
+  - name: Management Switch
+    color: 4caf50
+
+  - name: Patch Panel
+    color: dbc230
+
+  - name: Server
+    color: db30a8
+
+  - name: WAN Router
+    color: 2196f3
+
+  - name: Wireless AP
+    color: 00ffff

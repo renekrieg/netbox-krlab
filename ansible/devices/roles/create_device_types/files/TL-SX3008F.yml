@@ -1,0 +1,47 @@
+device_type:
+- manufacturer: TP-Link
+  model: TL-SX3008F
+  slug: tp-link-tl-sx3008f
+  part_number: TL-SX3008F
+  comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/managed-switch/tl-sx3008f/#specifications)'
+  is_full_depth: false
+  u_height: 1
+console_ports:
+- device_type: tp-link-tl-sx3008f
+  name: console
+  type: rj-45
+- device_type: tp-link-tl-sx3008f
+  name: USB console
+  type: usb-a
+interfaces:
+- device_type: tp-link-tl-sx3008f
+  name: '1'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '2'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '3'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '4'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '5'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '6'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '7'
+  type: 10gbase-x-sfpp
+- device_type: tp-link-tl-sx3008f
+  name: '8'
+  type: 10gbase-x-sfpp
+rear_ports: []
+front_ports: []
+power_ports:
+- device_type: tp-link-tl-sx3008f
+  name: PS1
+  type: iec-60320-c14
+  maximum_draw: 16

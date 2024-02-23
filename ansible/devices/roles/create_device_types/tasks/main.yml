@@ -1,0 +1,16 @@
+---
+- name: "Find files reccursively in root diretory {{ template_root }}"
+  find:
+    paths:
+      - "{{ template_root }}"
+    patterns:
+      - ".*\\.yml"
+      - ".*\\.yaml"
+    file_type: file
+    use_regex: yes
+    recurse: yes
+    depth: 2
+  register: template_files
+
+- name: "Parse file data for filenames from directory"
+  set_fact: template_files="{{ template_files.files | map(attribute='path') | list }}"

@@ -1,0 +1,11 @@
+---
+- name: Create Device Roles within NetBox
+  netbox.netbox.netbox_device_role:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ device_role }}"
+    state: present
+  loop: "{{ device_roles }}"
+  loop_control: 
+    loop_var: device_role
+    label: "{{ device_role['name']}}"
