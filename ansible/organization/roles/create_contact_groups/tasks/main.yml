@@ -1,0 +1,11 @@
+---
+- name: Create Contact Groups within NetBox
+  netbox.netbox.netbox_contact_group:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ contact_group }}"
+    state: present
+  loop: "{{ contact_groups }}"
+  loop_control: 
+    loop_var: contact_group
+    label: "{{ contact_group['name']}}"

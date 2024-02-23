@@ -1,0 +1,11 @@
+---
+- name: Create Locations within NetBox
+  netbox.netbox.netbox_location:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ location }}"
+    state: present
+  loop: "{{ locations }}"
+  loop_control: 
+    loop_var: location
+    label: "{{ location['name']}}"

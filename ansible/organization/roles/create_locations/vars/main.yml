@@ -1,0 +1,32 @@
+---
+locations:
+
+  - name: PRV-KG
+    site: PRV
+
+  - name: PRV-EG
+    site: PRV
+
+  - name: PRV-OG
+    site: PRV
+
+  - name: PRV-Waschraum
+    site: PRV
+    parent_location: PRV-KG
+
+  - name: PRV-Technikraum
+    site: PRV
+    parent_location: PRV-KG
+
+  - name: PAR-KG
+    site: PAR
+
+  - name: PAR-EG
+    site: PAR
+
+  - name: PAR-OG
+    site: PAR
+
+  - name: PAR-Technikraum
+    site: PAR
+    parent_location: PAR-KG

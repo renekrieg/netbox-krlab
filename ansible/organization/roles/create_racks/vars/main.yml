@@ -1,0 +1,32 @@
+---
+racks:
+
+  - name: PRV-RK-01
+    site: PRV
+    location: PRV-Waschraum
+    rack_role: Infrastructure
+    type: "4-post cabinet"
+    width: 19
+    u_height: 42
+    mounting_depth: 600
+    status: active
+
+  - name: PRV-RK-02
+    site: PRV
+    location: PRV-Technikraum
+    rack_role: Homelab
+    type: "4-post frame"
+    width: 19
+    u_height: 25
+    mounting_depth: 1200
+    status: active
+
+  - name: PAR-RK-01
+    site: PAR
+    location: PAR-Technikraum
+    rack_role: Infrastructure
+    type: "4-post cabinet"
+    width: 19
+    u_height: 25
+    mounting_depth: 600
+    status: active

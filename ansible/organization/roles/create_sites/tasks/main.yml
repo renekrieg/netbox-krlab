@@ -1,0 +1,11 @@
+---
+- name: Create Sites within NetBox
+  netbox.netbox.netbox_site:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ site }}"
+    state: present
+  loop: "{{ sites }}"
+  loop_control: 
+    loop_var: site
+    label: "{{ site['name']}}"

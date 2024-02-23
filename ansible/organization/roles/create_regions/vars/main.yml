@@ -1,0 +1,9 @@
+---
+regions:
+
+  - name: Germany
+    slug: germany
+
+  - name: Bad Homburg
+    slug: bad-homburg
+    parent_region: Germany

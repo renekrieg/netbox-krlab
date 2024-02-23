@@ -1,0 +1,63 @@
+---
+- name: PLAY 1 - Create Regions
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_regions
+      tags: regions
+
+- name: PLAY 2 - Create Contact Groups
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_contact_groups
+      tags: contact_groups
+
+- name: PLAY 3 - Create Contacts
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_contacts
+      tags: contacts
+
+- name: PLAY 4 - Create Sites
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_sites
+      tags: sites
+
+- name: PLAY 5 - Create Locations
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_locations
+      tags: locations
+
+- name: PLAY 6 - Create Rack Roles
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_rack_roles
+      tags: rack_roles
+
+- name: PLAY 7 - Create Racks
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  roles:
+    - role: create_racks
+      tags: racks

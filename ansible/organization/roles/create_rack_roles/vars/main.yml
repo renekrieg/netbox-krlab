@@ -1,0 +1,10 @@
+---
+rack_roles:
+
+  - name: Homelab
+    color: ffc107
+#    description: Homelab Equipment
+
+  - name: Infrastructure
+    color: 9e9e9e
+#    description: Mixed IT Infrastructure

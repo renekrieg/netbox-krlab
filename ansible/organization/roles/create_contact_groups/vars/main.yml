@@ -1,0 +1,8 @@
+---
+contact_groups:
+
+  - name: Administrator
+    slug: administrator
+
+  - name: Customer
+    slug: customer

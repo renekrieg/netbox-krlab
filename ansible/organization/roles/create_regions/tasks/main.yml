@@ -1,0 +1,11 @@
+---
+- name: Create Regions within NetBox
+  netbox.netbox.netbox_region:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ region }}"
+    state: present
+  loop: "{{ regions }}"
+  loop_control: 
+    loop_var: region
+    label: "{{ region['name']}}"

@@ -1,0 +1,24 @@
+---
+sites:
+
+  - name: PRV
+    status: Planned
+    region: Bad Homburg
+    time_zone: Europe/Berlin
+    description: My Own Network Infrastructe
+    physical_address: Kolpingstraße 16A, 61350 Bad Homburg
+    latitude: 50.245860
+    longitude: 8.606870
+    slug: prv
+    comments: ### Placeholder
+
+  - name: PAR
+    status: Planned
+    region: Bad Homburg
+    time_zone: Europe/Berlin
+    description: Infrastructure of my Parents
+    physical_address: Rotlaufweg 33, 61350 Bad Homburg
+    latitude: 50.251913
+    longitude: 8.616793
+    slug: par
+    comments: ### Placeholder

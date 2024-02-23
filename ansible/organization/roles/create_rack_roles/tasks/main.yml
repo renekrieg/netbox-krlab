@@ -1,0 +1,11 @@
+---
+- name: Create Rack Roles within NetBox
+  netbox.netbox.netbox_rack_role:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ rack_role }}"
+    state: present
+  loop: "{{ rack_roles }}"
+  loop_control: 
+    loop_var: rack_role
+    label: "{{ rack_role['name']}}"

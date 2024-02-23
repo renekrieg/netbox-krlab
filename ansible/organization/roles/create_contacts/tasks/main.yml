@@ -1,0 +1,11 @@
+---
+- name: Create Contacts within NetBox
+  netbox.netbox.netbox_contact:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ contact }}"
+    state: present
+  loop: "{{ contacts }}"
+  loop_control: 
+    loop_var: contact
+    label: "{{ contact['name']}}"
