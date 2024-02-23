@@ -1,0 +1,34 @@
+---
+manufacturer: MikroTik
+model: CRS310-8G+2S+IN
+slug: mikrotik-crs310-8g-plus-2s-plus-in
+part_number: CRS310-8G+2S+IN
+is_full_depth: false
+comments: https://mikrotik.com/product/crs310_8g_2s_in
+u_height: 1
+airflow: front-to-rear
+interfaces:
+  - name: ether1
+    type: 2.5gbase-t
+  - name: ether2
+    type: 2.5gbase-t
+  - name: ether3
+    type: 2.5gbase-t
+  - name: ether4
+    type: 2.5gbase-t
+  - name: ether5
+    type: 2.5gbase-t
+  - name: ether6
+    type: 2.5gbase-t
+  - name: ether7
+    type: 2.5gbase-t
+  - name: ether8
+    type: 2.5gbase-t
+  - name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+  - name: sfp-sfpplus2
+    type: 10gbase-x-sfpp
+power-ports:
+  - name: power1
+    type: iec-60320-c14
+    maximum_draw: 34
