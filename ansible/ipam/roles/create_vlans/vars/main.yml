@@ -1,0 +1,44 @@
+---
+vlans:
+
+  - name: WAN_TUNNEL
+    site: PRV
+    status: reserved
+    vid: 1
+    vlan_group: KR_R_VLANS_VLANS
+    vlan_role: WAN
+
+  - name: 
+    site: PRV
+    status: reserved
+    vid: 20
+    vlan_group: KR_R_VLANS_VLANS
+    vlan_role: 
+
+  - name: 
+    site: PRV
+    status: reserved
+    vid: 30
+    vlan_group: KR_R_VLANS
+    vlan_role: 
+
+  - name: 
+    site: PRV
+    status: reserved
+    vid: 40
+    vlan_group: KR_R_VLANS_VLANS
+    vlan_role: 
+
+  - name: 
+    site: PRV
+    status: reserved
+    vid: 50
+    vlan_group: KR_R_VLANS_VLANS
+    vlan_role: 
+    
+  - name: 
+    site: PRV
+    status: reserved
+    vid: 60
+    vlan_group: KR_R_VLANS_VLANS
+    vlan_role: 

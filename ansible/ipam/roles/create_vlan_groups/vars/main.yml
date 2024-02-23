@@ -1,0 +1,6 @@
+---
+vlan_groups:
+
+  - name: KR_R_VLANS_VLANS
+    scope_type: dcim.site
+    # scope: PRV

@@ -1,0 +1,14 @@
+---
+ipam_roles:
+
+  - name: WAN
+  - name: Managment
+  - name: Smarthome
+  - name: Entertainment
+  - name: Home_Secure
+  - name: Guest_WiFi
+  - name: IoT
+  - name: Servers
+  - name: DMZ
+  - name: Test
+  - name: VPN

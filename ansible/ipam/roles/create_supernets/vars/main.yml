@@ -1,0 +1,7 @@
+---
+supernet_prefixes:
+
+  - prefix: 172.16.0.0/12
+    status: reserved
+    description: Supernet in my home 
+    site: PRV
