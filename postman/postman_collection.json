@@ -1,0 +1,996 @@
+{
+	"info": {
+		"_postman_id": "64aeb6fc-db20-4da4-87ca-548ee451afa1",
+		"name": "NetBox - Zero to Hero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21687002"
+	},
+	"item": [
+		{
+			"name": "Devices",
+			"item": [
+				{
+					"name": "get manufacturers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/manufacturers/?brief=1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"manufacturers",
+								""
+							],
+							"query": [
+								{
+									"key": "brief",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add manufacturers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Cisco\",\n        \"slug\": \"cisco\"\n    },\n    {\n        \"name\": \"Cisco Meraki\",\n        \"slug\": \"cisco-meraki\"\n    },\n    {\n        \"name\": \"Juniper\",\n        \"slug\": \"juniper\"\n    },\n    {\n        \"name\": \"Panduit\",\n        \"slug\": \"panduit\"\n    },\n    {\n        \"name\": \"Avocent\",\n        \"slug\": \"avocent\"\n    }\n]"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/manufacturers/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"manufacturers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add device roles",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"WAN Router\",\n        \"slug\": \"wan-router\",\n        \"color\": \"327fa8\",\n        \"vm_role\": false\n    },\n    {\n        \"name\": \"Access Switch\",\n        \"slug\": \"access-switch\",\n        \"color\": \"32a871\",\n        \"vm_role\": false\n    },\n    {\n        \"name\": \"Wireless AP\",\n        \"slug\": \"wireless-ap\",\n        \"color\": \"a86332\",\n        \"vm_role\": false\n    },\n    {\n        \"name\": \"Patch Panel\",\n        \"slug\": \"patch-panel\",\n        \"color\": \"dbc230\",\n        \"vm_role\": false\n    },\n    {\n        \"name\": \"Console Server\",\n        \"slug\": \"console-server\",\n        \"color\": \"db30a8\",\n        \"vm_role\": false\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/device-roles/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"device-roles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add device",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"AUBRI01-RTR-1\",\n        \"device_type\": 1,\n        \"role\": 1,\n        \"tenant\": 5,\n        \"platform\": 1,\n        \"site\": 1,\n        \"location\": 1,\n        \"rack\": 1,\n        \"position\": 20.0,\n        \"face\": \"front\",\n        \"status\": \"planned\",\n        \"airflow\": \"front-to-rear\"\n    },\n    {\n        \"name\": \"AUBRI01-SW-1\",\n        \"device_type\": 2,\n        \"role\": 2,\n        \"tenant\": 5,\n        \"platform\": 2,\n        \"site\": 1,\n        \"location\": 1,\n        \"rack\": 1,\n        \"position\": 21.0,\n        \"face\": \"front\",\n        \"status\": \"planned\",\n        \"airflow\": \"front-to-rear\"\n    },\n    {\n        \"name\": \"AUBRI01-PAN-1\",\n        \"device_type\": 5,\n        \"role\": 4,\n        \"tenant\": 5,\n        \"site\": 1,\n        \"location\": 1,\n        \"rack\": 1,\n        \"position\": 22.0,\n        \"face\": \"front\",\n        \"status\": \"planned\"\n    },\n    {\n        \"name\": \"AUBRI01-CON-1\",\n        \"device_type\": 4,\n        \"role\": 5,\n        \"tenant\": 5,\n        \"site\": 1,\n        \"location\": 1,\n        \"rack\": 1,\n        \"position\": 19.0,\n        \"face\": \"front\",\n        \"status\": \"planned\"\n    },   \n    {\n        \"name\": \"AUBRI01-AP-1\",\n        \"device_type\": 3,\n        \"role\": 3,\n        \"tenant\": 5,\n        \"site\": 1,\n        \"location\": 1,\n        \"status\": \"planned\"\n    },\n    {\n        \"name\": \"AUBRI01-AP-2\",\n        \"device_type\": 3,\n        \"role\": 3,\n        \"tenant\": 5,\n        \"site\": 1,\n        \"location\": 1,\n        \"status\": \"planned\"\n    }   \n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/devices/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"devices",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get device roles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/device-roles/?brief=1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"device-roles",
+								""
+							],
+							"query": [
+								{
+									"key": "brief",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get platforms",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/platforms/?brief=1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"platforms",
+								""
+							],
+							"query": [
+								{
+									"key": "brief",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get devices",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/devices/?brief=1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"devices",
+								""
+							],
+							"query": [
+								{
+									"key": "brief",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get device types",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/device-types/?model__ic=ISR",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"device-types",
+								""
+							],
+							"query": [
+								{
+									"key": "model__ic",
+									"value": "ISR"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add platforms",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Cisco IOS\",\n        \"slug\": \"cisco-ios\",\n        \"manufacturer\": {\n            \"name\": \"Cisco\"\n        },\n        \"napalm_driver\": \"ios\"\n    },\n    {\n        \"name\": \"Juniper JunOS\",\n        \"slug\": \"juniper-junos\",\n        \"manufacturer\": {\n            \"name\": \"Juniper\"\n        },\n        \"napalm_driver\": \"junos\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/platforms/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"platforms",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "get sites",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/sites/?name__ic=bri",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"sites",
+								""
+							],
+							"query": [
+								{
+									"key": "name__ic",
+									"value": "bri"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get locations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/locations/?status=planned",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"locations",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "planned"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tenants",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/tenancy/tenants/?name__isw=consult",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"tenancy",
+								"tenants",
+								""
+							],
+							"query": [
+								{
+									"key": "name__isw",
+									"value": "consult"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get racks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/dcim/racks/?name__isw=aubri",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"dcim",
+								"racks",
+								""
+							],
+							"query": [
+								{
+									"key": "name__isw",
+									"value": "aubri"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Circuits",
+			"item": [
+				{
+					"name": "get providers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/circuits/providers/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"circuits",
+								"providers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get circuit types",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/circuits/circuit-types/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"circuits",
+								"circuit-types",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get circuits",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/circuits/circuits/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"circuits",
+								"circuits",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get circuit terminations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}/api/circuits/circuit-terminations/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"circuits",
+								"circuit-terminations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create provider",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Telstra\",\n        \"slug\": \"telstra\",\n        \"account\": \"TELAC6789\",\n        \"portal_url\": \"http://www.madeupportal.com\",\n        \"noc_contact\": \"email: help@madeupportal.com\",\n        \"admin_contact\": \"email:admin@madeupportal.com\"\n    } \n]"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}//api/circuits/providers/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"api",
+								"circuits",
+								"providers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create circuit type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Internet Access\",\n        \"slug\": \"internet-access\",\n        \"description\": \"Direct Internet Access Circuit\"\n    } \n]"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}//api/circuits/circuit-types/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"api",
+								"circuits",
+								"circuit-types",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create circuit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"cid\": \"TelCir12345\",\n        \"provider\": 1,\n        \"type\": 1,\n        \"status\": \"active\",\n        \"tenant\": 3, \n        \"commit_rate\": 200000\n    } \n]"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}//api/circuits/circuits/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"api",
+								"circuits",
+								"circuits",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create circuit termination",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n    \"circuit\": {\n        \"cid\": \"TelCir12345\"\n    },\n    \"term_side\": \"Z\",\n    \"site\": {\n        \"name\": \"AUBRI01\"\n    },\n    \"port_speed\": 200000\n    }\n]"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{netboxURL}}:{{port}}//api/circuits/circuit-terminations/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{netboxURL}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"api",
+								"circuits",
+								"circuit-terminations",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "netboxURL",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "8000",
+			"type": "string"
+		},
+		{
+			"key": "protocol",
+			"value": "http",
+			"type": "string"
+		},
+		{
+			"key": "api_token",
+			"value": "your API token",
+			"type": "string"
+		}
+	]
+}
