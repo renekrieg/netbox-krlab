@@ -1,4 +1,1225 @@
----
-netbox_url: "{{ nb_url | default(lookup('.env', 'NETBOX_API') }}"
-netbox_token: "{{ nb_token | default(lookup('.env',  'NETBOX_TOKEN') }}"
-template_root: "{{ template_dir | default('../templates/device-types/') }}"
+device_types:
+  - manufacturer: MikroTik
+    model: CRS310-8G+2S+IN
+    slug: mikrotik-crs310-8g-plus-2s-plus-in
+    part_number: CRS310-8G+2S+IN
+    is_full_depth: false
+    comments: https://mikrotik.com/product/crs310_8g_2s_in
+    u_height: 1
+    airflow: front-to-rear
+  - manufacturer: Metz Connect
+    model: 130920-BKKE
+    slug: 130920-bkke
+    part_number: 130920-BKKE
+    u_height: 1
+    is_full_depth: false
+    comments: '[Keystone 19 inch module frame 1RU 24 port black unequipped, shielded
+      ](https://media.metz-connect.com/files/171/Data_sheet_130920-BKKE.PDF)'
+  - manufacturer: Cisco
+    model: CBS220-48T-4G
+    slug: cisco-cbs220-48-4g
+    part_number: CBS220-48T-4G
+    comments: https://www.cisco.com/c/en/us/products/collateral/switches/business-220-series-smart-switches/datasheet-c78-744915.html
+    is_full_depth: false
+    u_height: 1
+  - manufacturer: Netgear
+    model: GS728TP
+    slug: netgear-prosafe-gs728tp
+    part_number: GS728TP
+    comments: https://www.downloads.netgear.com/files/GDC/datasheet/en/GS516TP-GS728TP-GS728TPP-GS752TP.pdf
+    u_height: 1
+    is_full_depth: false
+  - manufacturer: Linksys
+    model: LAPAC2600C
+    slug: lapac2600c
+    u_height: 0
+    is_full_depth: false
+    comments: https://www.linksys.com/support-product?sku=LAPAC2600C
+  - manufacturer: Netgear
+    model: GS748Tv5
+    slug: netgear-prosafe-gs748tv5
+    part_number: GS748Tv5
+    comments: https://www.downloads.netgear.com/files/GDC/GS724TV4/GS724Tv4-GS748Tv5_DS.pdf
+    u_height: 1
+    is_full_depth: false
+  - manufacturer: TP-Link
+    model: TL-SX3008F
+    slug: tp-link-tl-sx3008f
+    part_number: TL-SX3008F
+    comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/managed-switch/tl-sx3008f/#specifications)'
+    is_full_depth: false
+    u_height: 1
+  - manufacturer: Synology
+    model: DS1019+
+    slug: synology-ds1019-plus
+    part_number: DS1019+
+    u_height: 4
+    comments: '[Synology DS1019+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/DiskStation/19-year/DS1019+/ger/Synology_DS1019_Plus_Data_Sheet_ger.pdf)'
+    is_full_depth: false
+  - manufacturer: Cisco
+    model: CBS350-48FP-4X
+    slug: cisco-cbs350-48fp-4x
+    part_number: CBS350-48FP-4X
+    comments: https://www.cisco.com/c/en/us/products/collateral/switches/business-350-series-managed-switches/datasheet-c78-744156.html
+    is_full_depth: false
+    u_height: 1
+  - manufacturer: Synology
+    model: RS1221+
+    slug: synology-rs1221-plus
+    part_number: RS1221+
+    u_height: 2
+    is_full_depth: true
+    comments: '[Synology RS1221+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/RackStation/21-year/RS1221%2B/ger/Synology_RS1221%2B_Data_Sheet_ger.pdf)'
+  - manufacturer: TP-Link
+    model: TL-SG2218
+    slug: tp-link-tl-sg3424p
+    part_number: TL-SG2218
+    comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/omada-switch-smart/tl-sg2218/#specifications)'
+    is_full_depth: false
+    u_height: 1
+  - manufacturer: Cisco
+    model: CBS250-8T-D
+    slug: cisco-cbs250-8t-d
+    part_number: CBS250-8T-D
+    comments: https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.html
+    u_height: 0
+    is_full_depth: false
+console_ports:
+  - device_type: cisco-cbs220-48-4g
+    name: con0
+    type: rj-45
+  - device_type: tp-link-tl-sx3008f
+    name: console
+    type: rj-45
+  - device_type: tp-link-tl-sx3008f
+    name: USB console
+    type: usb-a
+  - device_type: cisco-cbs350-48fp-4x
+    name: con0
+    type: rj-45
+  - device_type: cisco-cbs350-48fp-4x
+    name: USB con0
+    type: usb-a
+  - device_type: synology-rs1221-plus
+    name: Serial
+    type: de-9
+interfaces:
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether1
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether2
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether3
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether4
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether5
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether6
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether7
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: ether8
+    type: 2.5gbase-t
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: sfp-sfpplus1
+    type: 10gbase-x-sfpp
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: sfp-sfpplus2
+    type: 10gbase-x-sfpp
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet1
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet2
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet3
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet4
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet5
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet6
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet7
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet8
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet9
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet10
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet11
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet12
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet13
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet14
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet15
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet16
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet17
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet18
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet19
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet20
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet21
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet22
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet23
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet24
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet25
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet26
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet27
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet28
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet29
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet30
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet31
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet32
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet33
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet34
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet35
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet36
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet37
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet38
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet39
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet40
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet41
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet42
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet43
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet44
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet45
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet46
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet47
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet48
+    type: 1000base-t
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet49
+    type: 1000base-x-sfp
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet50
+    type: 1000base-x-sfp
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet51
+    type: 1000base-x-sfp
+  - device_type: cisco-cbs220-48-4g
+    name: GigabitEthernet52
+    type: 1000base-x-sfp
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel1
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel2
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel3
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel4
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel5
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel6
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel7
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Port-Channel8
+    type: lag
+  - device_type: cisco-cbs220-48-4g
+    name: Vlan1
+    type: virtual
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/1
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/2
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/3
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/4
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/5
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/6
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/7
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/8
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/9
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/10
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/11
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/12
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/13
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/14
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/15
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/16
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/17
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/18
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/19
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/20
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/21
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/22
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/23
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/24
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/25
+    type: 1000base-x-sfp
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/26
+    type: 1000base-x-sfp
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/27
+    type: 1000base-x-sfp
+  - device_type: netgear-prosafe-gs728tp
+    name: 1/0/28
+    type: 1000base-x-sfp
+  - device_type: lapac2600c
+    name: ether1
+    type: 1000base-t
+    poe_mode: pd
+    poe_type: type2-ieee802.3at
+  - device_type: lapac2600c
+    name: ether2
+    type: 1000base-t
+  - device_type: lapac2600c
+    name: wifi1
+    type: ieee802.11ax
+    description: 5ghz
+  - device_type: lapac2600c
+    name: wifi2
+    type: ieee802.11ax
+    description: 2.4ghz
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/1
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/2
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/3
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/4
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/5
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/6
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/7
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/8
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/9
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/10
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/11
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/12
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/13
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/14
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/15
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/16
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/17
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/18
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/19
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/20
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/21
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/22
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/23
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/24
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/25
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/26
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/27
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/28
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/29
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/30
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/31
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/32
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/33
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/34
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/35
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/36
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/37
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/38
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/39
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/40
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/41
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/42
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/43
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/44
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/45
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/46
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/47
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/48
+    type: 1000base-t
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/49
+    type: 1000base-x-sfp
+  - device_type: netgear-prosafe-gs748tv5
+    name: 1/0/50
+    type: 1000base-x-sfp
+  - device_type: tp-link-tl-sx3008f
+    name: '1'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '2'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '3'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '4'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '5'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '6'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '7'
+    type: 10gbase-x-sfpp
+  - device_type: tp-link-tl-sx3008f
+    name: '8'
+    type: 10gbase-x-sfpp
+  - device_type: synology-ds1019-plus
+    name: LAN 1
+    type: 1000base-t
+  - device_type: synology-ds1019-plus
+    name: LAN 2
+    type: 1000base-t
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/1
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/2
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/3
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/4
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/5
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/6
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/7
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/8
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/9
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/10
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/11
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/12
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/13
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/14
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/15
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/16
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/17
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/18
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/19
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/20
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/21
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/22
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/23
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/24
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/25
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/26
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/27
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/28
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/29
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/30
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/31
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/32
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/33
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/34
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/35
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/36
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/37
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/38
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/39
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/40
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/41
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/42
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/43
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/44
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/45
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/46
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/47
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: GigabitEthernet1/0/48
+    type: 1000base-t
+    poe_mode: pse
+    poe_type: type2-ieee802.3at
+  - device_type: cisco-cbs350-48fp-4x
+    name: TengigabitEthernet1/0/1
+    type: 10gbase-x-sfpp
+  - device_type: cisco-cbs350-48fp-4x
+    name: TengigabitEthernet1/0/2
+    type: 10gbase-x-sfpp
+  - device_type: cisco-cbs350-48fp-4x
+    name: TengigabitEthernet1/0/3
+    type: 10gbase-x-sfpp
+  - device_type: cisco-cbs350-48fp-4x
+    name: TengigabitEthernet1/0/4
+    type: 10gbase-x-sfpp
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel1
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel2
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel3
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel4
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel5
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel6
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel7
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Port-Channel8
+    type: lag
+  - device_type: cisco-cbs350-48fp-4x
+    name: Vlan1
+    type: virtual
+  - device_type: synology-rs1221-plus
+    name: LAN 1
+    type: 1000base-t
+  - device_type: synology-rs1221-plus
+    name: LAN 2
+    type: 1000base-t
+  - device_type: synology-rs1221-plus
+    name: LAN 3
+    type: 1000base-t
+  - device_type: synology-rs1221-plus
+    name: LAN 4
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '1'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '2'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '3'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '4'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '5'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '6'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '7'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '8'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '9'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '10'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '11'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '12'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '13'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '14'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '15'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '16'
+    type: 1000base-t
+  - device_type: tp-link-tl-sg3424p
+    name: '17'
+    type: 1000base-x-sfp
+  - device_type: tp-link-tl-sg3424p
+    name: '18'
+    type: 1000base-x-sfp
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet1
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet2
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet3
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet4
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet5
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet6
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet7
+    type: 1000base-t
+  - device_type: cisco-cbs250-8t-d
+    name: GigabitEthernet8
+    type: 1000base-t
+rear_ports:
+  - device_type: 130920-bkke
+    name: '01'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '02'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '03'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '04'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '05'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '06'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '07'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: 08
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: 09
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '10'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '11'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '12'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '13'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '14'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '15'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '16'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '17'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '18'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '19'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '20'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '21'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '22'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '23'
+    type: 110-punch
+    positions: 1
+  - device_type: 130920-bkke
+    name: '24'
+    type: 110-punch
+    positions: 1
+front_ports:
+  - device_type: 130920-bkke
+    name: '01'
+    type: 8p8c
+    rear_port: '01'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '02'
+    type: 8p8c
+    rear_port: '02'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '03'
+    type: 8p8c
+    rear_port: '03'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '04'
+    type: 8p8c
+    rear_port: '04'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '05'
+    type: 8p8c
+    rear_port: '05'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '06'
+    type: 8p8c
+    rear_port: '06'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '07'
+    type: 8p8c
+    rear_port: '07'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: 08
+    type: 8p8c
+    rear_port: 08
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: 09
+    type: 8p8c
+    rear_port: 09
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '10'
+    type: 8p8c
+    rear_port: '10'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '11'
+    type: 8p8c
+    rear_port: '11'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '12'
+    type: 8p8c
+    rear_port: '12'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '13'
+    type: 8p8c
+    rear_port: '13'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '14'
+    type: 8p8c
+    rear_port: '14'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '15'
+    type: 8p8c
+    rear_port: '15'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '16'
+    type: 8p8c
+    rear_port: '16'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '17'
+    type: 8p8c
+    rear_port: '17'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '18'
+    type: 8p8c
+    rear_port: '18'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '19'
+    type: 8p8c
+    rear_port: '19'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '20'
+    type: 8p8c
+    rear_port: '20'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '21'
+    type: 8p8c
+    rear_port: '21'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '22'
+    type: 8p8c
+    rear_port: '22'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '23'
+    type: 8p8c
+    rear_port: '23'
+    rear_port_position: 1
+  - device_type: 130920-bkke
+    name: '24'
+    type: 8p8c
+    rear_port: '24'
+    rear_port_position: 1
+power_ports:
+  - device_type: mikrotik-crs310-8g-plus-2s-plus-in
+    name: power1
+    type: iec-60320-c14
+    maximum_draw: 34
+  - device_type: cisco-cbs220-48-4g
+    name: PSU0
+    type: iec-60320-c14
+    maximum_draw: 36
+  - device_type: netgear-prosafe-gs728tp
+    name: Power
+    type: iec-60320-c14
+    maximum_draw: 264
+  - device_type: netgear-prosafe-gs748tv5
+    name: Power
+    type: iec-60320-c14
+    maximum_draw: 41
+  - device_type: tp-link-tl-sx3008f
+    name: PS1
+    type: iec-60320-c14
+    maximum_draw: 16
+  - device_type: synology-ds1019-plus
+    name: PSU
+    type: dc-terminal
+  - device_type: cisco-cbs350-48fp-4x
+    name: PSU0
+    type: iec-60320-c14
+    maximum_draw: 740
+  - device_type: synology-rs1221-plus
+    name: PSU 1
+    type: iec-60320-c14
+  - device_type: tp-link-tl-sg3424p
+    name: PS1
+    type: iec-60320-c14
+    maximum_draw: 12
+  - device_type: cisco-cbs250-8t-d
+    name: PSU0
+    type: iec-60320-c14
+    maximum_draw: 8

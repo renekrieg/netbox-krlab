@@ -1,16 +1,66 @@
 ---
-- name: "Find files reccursively in root diretory {{ template_root }}"
-  find:
-    paths:
-      - "{{ template_root }}"
-    patterns:
-      - ".*\\.yml"
-      - ".*\\.yaml"
-    file_type: file
-    use_regex: yes
-    recurse: yes
-    depth: 2
-  register: template_files
+- name: Create Device Types within NetBox
+  netbox.netbox.netbox_device_type:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ device_type }}"
+    state: present
+  loop: "{{ device_types }}"
+  loop_control: 
+    loop_var: device_type
+    label: "{{ device_type['model']}}"
 
-- name: "Parse file data for filenames from directory"
-  set_fact: template_files="{{ template_files.files | map(attribute='path') | list }}"
+- name: Create Device Types Interfaces within NetBox
+  netbox.netbox.netbox_device_interface_template:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ interface }}"
+    state: present
+  loop: "{{ interfaces }}"
+  loop_control: 
+    loop_var: interface
+    label: "{{ interface['name']}}"
+
+- name: Create Device Types Console Port within NetBox
+  netbox.netbox.netbox_console_port_template:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ console_port }}"
+    state: present
+  loop: "{{ console_ports }}"
+  loop_control: 
+    loop_var: console_port
+    label: "{{ console_port['name']}}"
+
+- name: Create Device Types Power Port within NetBox
+  netbox.netbox.netbox_power_port_template:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ power_port }}"
+    state: present
+  loop: "{{ power_ports }}"
+  loop_control: 
+    loop_var: power_port
+    label: "{{ power_port['name']}}"
+
+- name: Create Device Types Rear Ports within NetBox
+  netbox.netbox.netbox_rear_port_template:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ rear_port }}"
+    state: present
+  loop: "{{ rear_ports }}"
+  loop_control: 
+    loop_var: rear_port
+    label: "{{ rear_port['name']}}"
+
+- name: Create Device Types Front Ports within NetBox
+  netbox.netbox.netbox_front_port_template:
+    netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
+    netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
+    data: "{{ front_port }}"
+    state: present
+  loop: "{{ front_ports }}"
+  loop_control: 
+    loop_var: front_port
+    label: "{{ front_port['name']}}"
