@@ -1,77 +1,79 @@
 ---
 prefixes:
 
-  - status: reserved
-    description: Managment
-    prefix: 172.16.3.0/26
-    site: KR-PRV
-    vlan: Managment
-
-  - status: reserved
+  - parent: 172.16.0.0/20
+    status: reserved
     description: Smarthome
-    prefix: 172.16.2.0/25
+    prefix_length: 24
     site: KR-PRV
     vlan: Smarthome
 
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: Entertainment
-  #   prefix_length: 25
-  #   site: KR-PRV
-  #   vlan: Entertainment
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: Entertainment
+    prefix_length: 24
+    site: KR-PRV
+    vlan: Entertainment
 
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: Home Secure
-  #   prefix_length: 25
-  #   site: KR-PRV
-  #   vlan: Home_Secure
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: IoT
+    prefix_length: 24
+    site: KR-PRV
+    vlan: IoT
 
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: Guest_WiFi
-  #   prefix_length: 25
-  #   site: KR-PRV
-  #   vlan: Guest_WiFi
-    
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: IoT
-  #   prefix_length: 25
-  #   site: KR-PRV
-  #   vlan: IoT
-    
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: Servers
-  #   prefix_length: 25
-  #   site: KR-PRV
-  #   vlan: Servers
-    
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: DMZ
-  #   prefix_length: 29
-  #   site: KR-PRV
-  #   vlan: DMZ
-    
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: Test
-  #   prefix_length: 25
-  #   site: KR-PRV
-  #   vlan: Test
-    
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: VPN
-  #   prefix_length: 29
-  #   site: KR-PRV
-  #   vlan: VPN
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: Guest_WiFi
+    prefix_length: 24
+    site: KR-PRV
+    vlan: Guest_WiFi
 
-  # - parent: 172.16.0.0/20
-  #   status: reserved
-  #   description: WAN
-  #   prefix_length: 29
-  #   site: KR-PRV
-  #   vlan: WAN
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: Home Secure
+    prefix_length: 24
+    site: KR-PRV
+    vlan: Home_Secure
+
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: Servers
+    prefix_length: 24
+    site: KR-PRV
+    vlan: Servers
+
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: Managment
+    prefix_length: 24
+    site: KR-PRV
+    vlan: Managment
+
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: Test
+    prefix_length: 24
+    site: KR-PRV
+    vlan: Test
+
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: DMZ
+    prefix_length: 24
+    site: KR-PRV
+    vlan: DMZ
+
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: VPN
+    prefix_length: 29
+    site: KR-PRV
+    vlan: VPN
+
+  - parent: 172.16.0.0/20
+    status: reserved
+    description: WAN
+    prefix_length: 29
+    site: KR-PRV
+    vlan: WAN
