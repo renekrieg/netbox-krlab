@@ -1,7 +1,12 @@
 ---
 supernet_prefixes:
 
-  - prefix: 172.16.0.0/12
+  - prefix: 172.16.0.0/20
     status: reserved
-    description: Supernet in my home 
-    site: PRV
+    description: KR-PRV Supernet
+    site: KR-PRV
+
+  - prefix: 192.168.0.0/22
+    status: reserved
+    description: KR-PAR Supernet
+    site: KR-PAR

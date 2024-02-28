@@ -1,6 +1,10 @@
 ---
 vlan_groups:
 
-  - name: KR_R_VLANS_VLANS
+  - name: KR-PRV_VLANS
     scope_type: dcim.site
-    # scope: PRV
+    scope: KR-PRV
+
+  - name: KR-PAR_VLANS
+    scope_type: dcim.site
+    scope: KR-PAR

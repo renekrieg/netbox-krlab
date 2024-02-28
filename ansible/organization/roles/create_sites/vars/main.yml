@@ -1,7 +1,7 @@
 ---
 sites:
 
-  - name: PRV
+  - name: KR-PRV
     status: Planned
     region: Bad Homburg
     time_zone: Europe/Berlin
@@ -9,10 +9,10 @@ sites:
     physical_address: Kolpingstraße 16A, 61350 Bad Homburg
     latitude: 50.245860
     longitude: 8.606870
-    slug: prv
+    slug: kr-prv
     comments: ### Placeholder
 
-  - name: PAR
+  - name: KR-PAR
     status: Planned
     region: Bad Homburg
     time_zone: Europe/Berlin
@@ -20,5 +20,5 @@ sites:
     physical_address: Rotlaufweg 33, 61350 Bad Homburg
     latitude: 50.251913
     longitude: 8.616793
-    slug: par
+    slug: kr-par
     comments: ### Placeholder

@@ -1,44 +1,79 @@
 ---
 vlans:
 
-  - name: WAN_TUNNEL
-    site: PRV
+  - name: Smarthome
+    site: KR-PRV
     status: reserved
-    vid: 1
-    vlan_group: KR_R_VLANS_VLANS
-    vlan_role: WAN
+    vid: 10
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Smarthome
 
-  - name: 
-    site: PRV
+  - name: Entertainment
+    site: KR-PRV
     status: reserved
     vid: 20
-    vlan_group: KR_R_VLANS_VLANS
-    vlan_role: 
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Entertainment
 
-  - name: 
-    site: PRV
+  - name: IoT
+    site: KR-PRV
     status: reserved
     vid: 30
-    vlan_group: KR_R_VLANS
-    vlan_role: 
-
-  - name: 
-    site: PRV
+    vlan_group: KR-PRV_VLANS
+    vlan_role: IoT
+    
+  - name: Guest_WiFi
+    site: KR-PRV
     status: reserved
     vid: 40
-    vlan_group: KR_R_VLANS_VLANS
-    vlan_role: 
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Guest_WiFi
 
-  - name: 
-    site: PRV
+  - name: Home_Secure
+    site: KR-PRV
     status: reserved
     vid: 50
-    vlan_group: KR_R_VLANS_VLANS
-    vlan_role: 
-    
-  - name: 
-    site: PRV
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Home_Secure
+
+  - name: Servers
+    site: KR-PRV
     status: reserved
     vid: 60
-    vlan_group: KR_R_VLANS_VLANS
-    vlan_role: 
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Servers
+
+  - name: Managment
+    site: KR-PRV
+    status: reserved
+    vid: 70
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Managment
+
+  - name: Test
+    site: KR-PRV
+    status: reserved
+    vid: 80
+    vlan_group: KR-PRV_VLANS
+    vlan_role: Test
+
+  - name: DMZ
+    site: KR-PRV
+    status: reserved
+    vid: 90
+    vlan_group: KR-PRV_VLANS
+    vlan_role: DMZ
+
+  - name: VPN
+    site: KR-PRV
+    status: reserved
+    vid: 100
+    vlan_group: KR-PRV_VLANS
+    vlan_role: VPN
+
+  - name: WAN
+    site: KR-PRV
+    status: reserved
+    vid: 200
+    vlan_group: KR-PRV_VLANS
+    vlan_role: WAN

@@ -44,11 +44,11 @@
     - role: create_vlan_groups
       tags: vlan_groups
 
-# - name: PLAY 6 - Create VLANs
-#   connection: local
-#   hosts: localhost
-#   gather_facts: False
+- name: PLAY 6 - Create VLANs
+  connection: local
+  hosts: localhost
+  gather_facts: False
 
-#   roles:
-#     - role: create_vlans
-#       tags: vlans
+  roles:
+    - role: create_vlans
+      tags: vlans
