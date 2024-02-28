@@ -22,6 +22,14 @@ device_types:
     comments: https://www.cisco.com/c/en/us/products/collateral/switches/business-220-series-smart-switches/datasheet-c78-744915.html
     is_full_depth: false
     u_height: 1
+  - manufacturer: DIGITUS
+    model: Cable-Management-Panel
+    slug: cable-management-panel
+    part_number: DN-97617
+    u_height: 1
+    is_full_depth: false
+    comments: '[DIGITUS Cable Management Panel with detachable cover for 483 mm (19“)
+      cabinets, 1U ](https://www.assmann.com/product-pdf/4016032279211?PL=en)'
   - manufacturer: Netgear
     model: GS728TP
     slug: netgear-prosafe-gs728tp
@@ -56,6 +64,13 @@ device_types:
     u_height: 4
     comments: '[Synology DS1019+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/DiskStation/19-year/DS1019+/ger/Synology_DS1019_Plus_Data_Sheet_ger.pdf)'
     is_full_depth: false
+  - manufacturer: DIGITUS
+    model: Blank-Panel
+    slug: blank-panel
+    part_number: DN-19 BPN-01-SW
+    u_height: 1
+    is_full_depth: false
+    comments: '[DIGITUS Blank Panel for 483 mm (19") Cabinets ](https://www.assmann.com/product-pdf/4016032171713?PL=en)'
   - manufacturer: Cisco
     model: CBS350-48FP-4X
     slug: cisco-cbs350-48fp-4x

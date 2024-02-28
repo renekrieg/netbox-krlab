@@ -1,32 +1,32 @@
 ---
 locations:
 
-  - name: PRV-KG
-    site: PRV
+  - name: KR-PRV-KG
+    site: KR-PRV
 
-  - name: PRV-EG
-    site: PRV
+  - name: KR-PRV-EG
+    site: KR-PRV
 
-  - name: PRV-OG
-    site: PRV
+  - name: KR-PRV-OG
+    site: KR-PRV
 
-  - name: PRV-Waschraum
-    site: PRV
-    parent_location: PRV-KG
+  - name: KR-PRV-Waschraum
+    site: KR-PRV
+    parent_location: KR-PRV-KG
 
-  - name: PRV-Technikraum
-    site: PRV
-    parent_location: PRV-KG
+  - name: KR-PRV-Technikraum
+    site: KR-PRV
+    parent_location: KR-PRV-KG
 
-  - name: PAR-KG
-    site: PAR
+  - name: KR-PAR-KG
+    site: KR-PAR
 
-  - name: PAR-EG
-    site: PAR
+  - name: KR-PAR-EG
+    site: KR-PAR
 
-  - name: PAR-OG
-    site: PAR
+  - name: KR-PAR-OG
+    site: KR-PAR
 
-  - name: PAR-Technikraum
-    site: PAR
-    parent_location: PAR-KG
+  - name: KR-PAR-Technikraum
+    site: KR-PAR
+    parent_location: KR-PAR-KG

@@ -2,19 +2,25 @@
 device_roles:
 
   - name: Access Switch
-    color: 8bc34a
-
-  - name: Management Switch
-    color: 4caf50
-
-  - name: Patch Panel
-    color: dbc230
-
-  - name: Server
-    color: db30a8
-
-  - name: WAN Router
     color: 2196f3
 
+  - name: Management Switch
+    color: 2196f3
+
+  - name: Server
+    color: 607d8b
+
+  - name: WAN Router
+    color: aa1409
+
   - name: Wireless AP
-    color: 00ffff
+    color: ffe4e1
+
+  - name: Power
+    color: ffc107
+
+  - name: Cable Management
+    color: 111111
+
+  - name: Patchpanel
+    color: 607d8b

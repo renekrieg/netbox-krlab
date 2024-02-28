@@ -1,11 +1,11 @@
 ---
-- name: Create Racks within NetBox
-  netbox.netbox.netbox_rack:
+- name: Create Devices within NetBox
+  netbox.netbox.netbox_device:
     netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
     netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
-    data: "{{ rack }}"
+    data: "{{ device }}"
     state: present
-  loop: "{{ racks }}"
+  loop: "{{ devices }}"
   loop_control: 
-    loop_var: rack
-    label: "{{ rack['name']}}"
+    loop_var: device
+    label: "{{ device['name']}}"

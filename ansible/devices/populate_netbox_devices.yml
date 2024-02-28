@@ -1,12 +1,12 @@
 ---
-# - name: PLAY 1 - Create Device Roles
-#   connection: local
-#   hosts: localhost
-#   gather_facts: False
+- name: PLAY 1 - Create Device Roles
+  connection: local
+  hosts: localhost
+  gather_facts: False
 
-#   roles:
-#     - role: create_device_roles
-#       tags: device_roles
+  roles:
+    - role: create_device_roles
+      tags: device_roles
 
 # - name: PLAY 2 - Create Manufacturers
 #   connection: local
@@ -26,11 +26,20 @@
 #     - role: create_platforms
 #       tags: platforms
 
-- name: PLAY 4 - Create Device Types from templates
+# - name: PLAY 4 - Create Device Types from templates
+#   connection: local
+#   hosts: localhost
+#   gather_facts: False
+
+#   roles:
+#     - role: create_device_types
+#       tags: device_types
+
+- name: PLAY 5 - Create Devices from templates
   connection: local
   hosts: localhost
   gather_facts: False
 
   roles:
-    - role: create_device_types
-      tags: device_types
+    - role: create_devices
+      tags: devices
