@@ -1,7 +1,7 @@
 ---
 supernet_prefixes:
 
-  - prefix: 172.16.0.0/20
+  - prefix: 172.16.0.0/16
     status: reserved
     description: KR-PRV Supernet
     site: KR-PRV

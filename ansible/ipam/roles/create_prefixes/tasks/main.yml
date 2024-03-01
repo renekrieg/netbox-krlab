@@ -4,7 +4,7 @@
     netbox_url: "{{ lookup('ansible.builtin.env', 'NETBOX_API') }}"
     netbox_token: "{{ lookup('ansible.builtin.env', 'NETBOX_TOKEN') }}"
     data: "{{ prefix }}"
-    first_available: true
+    first_available: false
   loop: "{{ prefixes }}"
   loop_control: 
     loop_var: prefix

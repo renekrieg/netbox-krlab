@@ -50,30 +50,30 @@ vlans:
     vlan_group: KR-PRV_VLANS
     vlan_role: Managment
 
-  - name: Test
+  - name: Test_VLAN
     site: KR-PRV
     status: reserved
     vid: 80
     vlan_group: KR-PRV_VLANS
-    vlan_role: Test
+    vlan_role: Test_VLAN
 
   - name: DMZ
     site: KR-PRV
     status: reserved
-    vid: 90
+    vid: 150
     vlan_group: KR-PRV_VLANS
     vlan_role: DMZ
 
   - name: VPN
     site: KR-PRV
     status: reserved
-    vid: 100
+    vid: 160
     vlan_group: KR-PRV_VLANS
     vlan_role: VPN
 
-  - name: WAN
+  - name: WAN_Tunnel
     site: KR-PRV
     status: reserved
-    vid: 200
+    vid: 170
     vlan_group: KR-PRV_VLANS
-    vlan_role: WAN
+    vlan_role: WAN_Tunnel

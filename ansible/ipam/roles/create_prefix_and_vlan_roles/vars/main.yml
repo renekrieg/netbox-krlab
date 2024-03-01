@@ -1,7 +1,7 @@
 ---
 ipam_roles:
 
-  - name: WAN
+  - name: WAN_Tunnel
   - name: Managment
   - name: Smarthome
   - name: Entertainment
@@ -10,5 +10,5 @@ ipam_roles:
   - name: IoT
   - name: Servers
   - name: DMZ
-  - name: Test
+  - name: Test_VLAN
   - name: VPN

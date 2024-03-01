@@ -1,57 +1,57 @@
 ---
 interfaces:
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.10
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.20
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.30
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.40
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.50
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.60
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.70
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
     name: vlan.80
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
-    name: vlan.90
+    name: vlan.150
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
-    name: vlan.100
+    name: vlan.160
 
-  - device: PRV-SW-1
+  - device: KR-PRV-SW-1
     enabled: yes
     type: virtual
-    name: vlan.200
+    name: vlan.170
