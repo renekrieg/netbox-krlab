@@ -19,4 +19,4 @@ front_ports: []
 power_ports:
 - device_type: synology-ds1019-plus
   name: PSU
-  type: dc-terminal
+  type: iec-60320-c14

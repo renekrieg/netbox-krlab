@@ -54,7 +54,7 @@ device_types:
     model: TL-SX3008F
     slug: tp-link-tl-sx3008f
     part_number: TL-SX3008F
-    comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/managed-switch/tl-sx3008f/#specifications)'
+    comments: '[TP-Link tl-sx3008f](https://www.tp-link.com/us/business-networking/managed-switch/tl-sx3008f/#specifications)'
     is_full_depth: false
     u_height: 1
   - manufacturer: Synology
@@ -83,13 +83,13 @@ device_types:
     slug: synology-rs1221-plus
     part_number: RS1221+
     u_height: 2
-    is_full_depth: true
+    is_full_depth: false
     comments: '[Synology RS1221+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/RackStation/21-year/RS1221%2B/ger/Synology_RS1221%2B_Data_Sheet_ger.pdf)'
   - manufacturer: TP-Link
     model: TL-SG2218
-    slug: tp-link-tl-sg3424p
+    slug: tp-link-tl-sg2218
     part_number: TL-SG2218
-    comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/omada-switch-smart/tl-sg2218/#specifications)'
+    comments: '[TP-Link tl-sg2218](https://www.tp-link.com/us/business-networking/omada-switch-smart/tl-sg2218/#specifications)'
     is_full_depth: false
     u_height: 1
   - manufacturer: Cisco
@@ -427,11 +427,9 @@ interfaces:
   - device_type: lapac2600c
     name: wifi1
     type: ieee802.11ax
-    description: 5ghz
   - device_type: lapac2600c
     name: wifi2
     type: ieee802.11ax
-    description: 2.4ghz
   - device_type: netgear-prosafe-gs748tv5
     name: 1/0/1
     type: 1000base-t
@@ -583,28 +581,28 @@ interfaces:
     name: 1/0/50
     type: 1000base-x-sfp
   - device_type: tp-link-tl-sx3008f
-    name: '1'
+    name: Port1/0/1
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '2'
+    name: Port1/0/2
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '3'
+    name: Port1/0/3
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '4'
+    name: Port1/0/4
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '5'
+    name: Port1/0/5
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '6'
+    name: Port1/0/6
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '7'
+    name: Port1/0/7
     type: 10gbase-x-sfpp
   - device_type: tp-link-tl-sx3008f
-    name: '8'
+    name: Port1/0/8
     type: 10gbase-x-sfpp
   - device_type: synology-ds1019-plus
     name: LAN 1
@@ -903,59 +901,59 @@ interfaces:
   - device_type: synology-rs1221-plus
     name: LAN 4
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '1'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/1
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '2'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/2
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '3'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/3
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '4'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/4
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '5'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/5
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '6'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/6
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '7'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/7
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '8'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/8
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '9'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/9
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '10'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/10
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '11'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/11
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '12'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/12
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '13'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/13
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '14'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/14
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '15'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/15
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '16'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/16
     type: 1000base-t
-  - device_type: tp-link-tl-sg3424p
-    name: '17'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/17
     type: 1000base-x-sfp
-  - device_type: tp-link-tl-sg3424p
-    name: '18'
+  - device_type: tp-link-tl-sg2218
+    name: Port1/0/18
     type: 1000base-x-sfp
   - device_type: cisco-cbs250-8t-d
     name: GigabitEthernet1
@@ -1082,123 +1080,123 @@ front_ports:
   - device_type: 130920-bkke
     name: '01'
     type: 8p8c
-    rear_port: '01'
-    rear_port_position: 1
+    rear_port_template: '01'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '02'
     type: 8p8c
-    rear_port: '02'
-    rear_port_position: 1
+    rear_port_template: '02'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '03'
     type: 8p8c
-    rear_port: '03'
-    rear_port_position: 1
+    rear_port_template: '03'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '04'
     type: 8p8c
-    rear_port: '04'
-    rear_port_position: 1
+    rear_port_template: '04'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '05'
     type: 8p8c
-    rear_port: '05'
-    rear_port_position: 1
+    rear_port_template: '05'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '06'
     type: 8p8c
-    rear_port: '06'
-    rear_port_position: 1
+    rear_port_template: '06'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '07'
     type: 8p8c
-    rear_port: '07'
-    rear_port_position: 1
+    rear_port_template: '07'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: 08
     type: 8p8c
-    rear_port: 08
-    rear_port_position: 1
+    rear_port_template: 08
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: 09
     type: 8p8c
-    rear_port: 09
-    rear_port_position: 1
+    rear_port_template: 09
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '10'
     type: 8p8c
-    rear_port: '10'
-    rear_port_position: 1
+    rear_port_template: '10'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '11'
     type: 8p8c
-    rear_port: '11'
-    rear_port_position: 1
+    rear_port_template: '11'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '12'
     type: 8p8c
-    rear_port: '12'
-    rear_port_position: 1
+    rear_port_template: '12'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '13'
     type: 8p8c
-    rear_port: '13'
-    rear_port_position: 1
+    rear_port_template: '13'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '14'
     type: 8p8c
-    rear_port: '14'
-    rear_port_position: 1
+    rear_port_template: '14'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '15'
     type: 8p8c
-    rear_port: '15'
-    rear_port_position: 1
+    rear_port_template: '15'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '16'
     type: 8p8c
-    rear_port: '16'
-    rear_port_position: 1
+    rear_port_template: '16'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '17'
     type: 8p8c
-    rear_port: '17'
-    rear_port_position: 1
+    rear_port_template: '17'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '18'
     type: 8p8c
-    rear_port: '18'
-    rear_port_position: 1
+    rear_port_template: '18'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '19'
     type: 8p8c
-    rear_port: '19'
-    rear_port_position: 1
+    rear_port_template: '19'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '20'
     type: 8p8c
-    rear_port: '20'
-    rear_port_position: 1
+    rear_port_template: '20'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '21'
     type: 8p8c
-    rear_port: '21'
-    rear_port_position: 1
+    rear_port_template: '21'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '22'
     type: 8p8c
-    rear_port: '22'
-    rear_port_position: 1
+    rear_port_template: '22'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '23'
     type: 8p8c
-    rear_port: '23'
-    rear_port_position: 1
+    rear_port_template: '23'
+    rear_port_template_position: 1
   - device_type: 130920-bkke
     name: '24'
     type: 8p8c
-    rear_port: '24'
-    rear_port_position: 1
+    rear_port_template: '24'
+    rear_port_template_position: 1
 power_ports:
   - device_type: mikrotik-crs310-8g-plus-2s-plus-in
     name: power1
@@ -1222,15 +1220,15 @@ power_ports:
     maximum_draw: 16
   - device_type: synology-ds1019-plus
     name: PSU
-    type: dc-terminal
+    type: iec-60320-c14
   - device_type: cisco-cbs350-48fp-4x
     name: PSU0
     type: iec-60320-c14
     maximum_draw: 740
   - device_type: synology-rs1221-plus
-    name: PSU 1
+    name: PSU1
     type: iec-60320-c14
-  - device_type: tp-link-tl-sg3424p
+  - device_type: tp-link-tl-sg2218
     name: PS1
     type: iec-60320-c14
     maximum_draw: 12

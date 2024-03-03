@@ -1,165 +1,211 @@
 ---
 devices:
 
-  - name: KR-PRV-SW-1
-    device_type: cisco-cbs350-48fp-4x
-    device_role: Management Switch
-    platform: Cisco OS SMB Switches
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 31
-    face: Front
-    status: active
+  # - name: KR-PRV-SW-1
+  #   device_type: cisco-cbs350-48fp-4x
+  #   device_role: Management Switch
+  #   platform: Cisco OS SMB Switches
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 31
+  #   face: Front
+  #   status: active
 
-  - name: KR-PRV-SW-2
-    device_type: cisco-cbs220-48-4g
+  # - name: KR-PRV-SW-2
+  #   device_type: cisco-cbs220-48-4g
+  #   device_role: Access Switch
+  #   platform: Cisco OS SMB Switches
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 28
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-SW-3
+  #   device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  #   device_role: Access Switch
+  #   #platform: 
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 26
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-PPAN-1
+  #   device_type: 130920-BKKE
+  #   device_role: Patchpanel
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 42
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-CMPAN-1
+  #   device_type: Cable-Management-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 41
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-PPAN-2
+  #   device_type: 130920-BKKE
+  #   device_role: Patchpanel
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 40
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-PPAN-3
+  #   device_type: 130920-BKKE
+  #   device_role: Patchpanel
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 39
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-CMPAN-2
+  #   device_type: Cable-Management-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 38
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-PPAN-4
+  #   device_type: 130920-BKKE
+  #   device_role: Patchpanel
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 37
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-PPAN-5
+  #   device_type: 130920-BKKE
+  #   device_role: Patchpanel
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 36
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-CMPAN-3
+  #   device_type: Cable-Management-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 35
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-CMPAN-4
+  #   device_type: Cable-Management-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 33
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-BPAN-1
+  #   device_type: Blank-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 32
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-BPAN-2
+  #   device_type: Blank-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 30
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-CMPAN-5
+  #   device_type: Cable-Management-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 29
+  #   face: Front
+  #   status: active
+
+  # - name: KR-PRV-CMPAN-6
+  #   device_type: Cable-Management-Panel
+  #   device_role: Cable Management
+  #   site: KR-PRV
+  #   location: KR-PRV-Waschraum
+  #   rack: KR-PRV-RK-01
+  #   position: 27
+  #   face: Front
+  #   status: active
+
+#   - name: KR-PRV-AP-1
+#     device_type: lapac2600c
+#     device_role: Wireless AP
+#     site: KR-PRV
+#     location: KR-PRV-KG
+#     status: active
+
+#   - name: KR-PRV-AP-2
+#     device_type: lapac2600c
+#     device_role: Wireless AP
+#     site: KR-PRV
+#     location: KR-PRV-EG
+#     status: active
+
+# # Homelab
+
+  - name: KR-PRV-SW-4
+    device_type: tp-link-tl-sg2218
     device_role: Access Switch
-    platform: Cisco OS SMB Switches
     site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 28
+    location: KR-PRV-Technikraum
+    rack: KR-PRV-RK-02
+    position: 24
     face: Front
     status: active
 
-  - name: KR-PRV-SW-3
-    device_type: mikrotik-crs310-8g-plus-2s-plus-in
+  - name: KR-PRV-SW-5
+    device_type: tp-link-tl-sx3008f
     device_role: Access Switch
-    #platform: 
     site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 26
+    location: KR-PRV-Technikraum
+    rack: KR-PRV-RK-02
+    position: 22
     face: Front
     status: active
 
-  - name: KR-PRV-PPAN-1
-    device_type: 130920-BKKE
-    device_role: Patchpanel
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 42
-    face: Front
-    status: active
-
-  - name: KR-PRV-CMPAN-1
-    device_type: Cable-Management-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 41
-    face: Front
-    status: active
-
-  - name: KR-PRV-PPAN-2
-    device_type: 130920-BKKE
-    device_role: Patchpanel
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 40
-    face: Front
-    status: active
-
-  - name: KR-PRV-PPAN-3
-    device_type: 130920-BKKE
-    device_role: Patchpanel
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 39
-    face: Front
-    status: active
-
-  - name: KR-PRV-CMPAN-2
-    device_type: Cable-Management-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 38
-    face: Front
-    status: active
-
-  - name: KR-PRV-PPAN-4
-    device_type: 130920-BKKE
-    device_role: Patchpanel
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 37
-    face: Front
-    status: active
-
-  - name: KR-PRV-PPAN-5
-    device_type: 130920-BKKE
-    device_role: Patchpanel
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 36
-    face: Front
-    status: active
-
-  - name: KR-PRV-CMPAN-3
-    device_type: Cable-Management-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 35
-    face: Front
-    status: active
-
-  - name: KR-PRV-CMPAN-4
-    device_type: Cable-Management-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 33
-    face: Front
-    status: active
-
-  - name: KR-PRV-BPAN-1
-    device_type: Blank-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 32
-    face: Front
-    status: active
-
-  - name: KR-PRV-BPAN-2
-    device_type: Blank-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 30
-    face: Front
-    status: active
-
-  - name: KR-PRV-CMPAN-5
-    device_type: Cable-Management-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 29
-    face: Front
-    status: active
-
-  - name: KR-PRV-CMPAN-6
-    device_type: Cable-Management-Panel
-    device_role: Cable Management
-    site: KR-PRV
-    location: KR-PRV-Waschraum
-    rack: KR-PRV-RK-01
-    position: 27
-    face: Front
-    status: active
+#   - name: KR-PRV-BPAN-3
+#     device_type: Blank-Panel
+#     device_role: Cable Management
+#     site: KR-PRV
+#     location: KR-PRV-Technikraum
+#     rack: KR-PRV-RK-02
+#     position: 23
+#     face: Front
+#     status: active

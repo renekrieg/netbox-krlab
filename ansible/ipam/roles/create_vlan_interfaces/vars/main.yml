@@ -55,3 +55,27 @@ interfaces:
     enabled: yes
     type: virtual
     name: vlan.170
+
+# Switch 2
+  - device: KR-PRV-SW-2
+    enabled: yes
+    type: virtual
+    name: vlan.70
+
+# Switch 3
+  - device: KR-PRV-SW-3
+    enabled: yes
+    type: virtual
+    name: vlan.70
+
+# Switch 4
+  - device: KR-PRV-SW-4
+    enabled: yes
+    type: virtual
+    name: vlan.70
+
+# Switch 5
+  - device: KR-PRV-SW-5
+    enabled: yes
+    type: virtual
+    name: vlan.70

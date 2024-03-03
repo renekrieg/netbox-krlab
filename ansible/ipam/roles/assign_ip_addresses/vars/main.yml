@@ -3,51 +3,63 @@ ip_addresses:
 
   - assigned_object:
       device: KR-PRV-SW-1
+      name: vlan.10
+    prefix: 172.16.10.0/24
+    status: Reserved
+
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.20
+    prefix: 172.16.20.0/24
+    status: Reserved
+
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.30
+    prefix: 172.16.30.0/24
+    status: Reserved
+
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.40
+    prefix: 172.16.40.0/24
+    status: Reserved
+
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.50
+    prefix: 172.16.50.0/24
+    status: Reserved
+
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.60
+    prefix: 172.16.60.0/24
+    status: Reserved
+
+  - assigned_object:
+      device: KR-PRV-SW-1
       name: vlan.70
     prefix: 172.16.70.0/24
     status: Reserved
 
-  # - assigned_object:
-  #     device: AUBRI01-SW-1
-  #     name: ge-0/0/0
-  #   prefix: 192.168.2.64/30
-  #   status: Reserved
-  #   tenant: Consulting
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.80
+    prefix: 172.16.80.0/24
+    status: Reserved
 
-  # - assigned_object:
-  #     device: AUBRI01-SW-1
-  #     name: vlan.10
-  #   prefix: 192.168.0.0/25
-  #   status: Reserved
-  #   tenant: Consulting
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.150
+    prefix: 172.16.150.0/24
+    status: Reserved
 
-  # - assigned_object:
-  #     device: AUBRI01-SW-1
-  #     name: vlan.20
-  #   prefix: 192.168.0.128/25
-  #   status: Reserved
-  #   tenant: Consulting
-
-  # - assigned_object:
-  #     device: AUBRI01-SW-1
-  #     name: vlan.30
-  #   prefix: 192.168.1.0/25
-  #   status: Reserved
-  #   tenant: Consulting
-
-  # - assigned_object:
-  #     device: AUBRI01-SW-1
-  #     name: vlan.40
-  #   prefix: 192.168.1.128/25
-  #   status: Reserved
-  #   tenant: Consulting
-
-  # - assigned_object:
-  #     device: AUBRI01-SW-1
-  #     name: vlan.50
-  #   prefix: 192.168.2.0/26
-  #   status: Reserved
-  #   tenant: Consulting
+  - assigned_object:
+      device: KR-PRV-SW-1
+      name: vlan.160
+    prefix: 172.16.160.0/29
+    status: Reserved
     
   # - assigned_object:
   #     device: AUBRI01-RTR-1

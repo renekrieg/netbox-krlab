@@ -8,32 +8,32 @@
     - role: create_device_roles
       tags: device_roles
 
-# - name: PLAY 2 - Create Manufacturers
-#   connection: local
-#   hosts: localhost
-#   gather_facts: False
+- name: PLAY 2 - Create Manufacturers
+  connection: local
+  hosts: localhost
+  gather_facts: False
 
-#   roles:
-#     - role: create_manufacturers
-#       tags: manufacturers
+  roles:
+    - role: create_manufacturers
+      tags: manufacturers
 
-# - name: PLAY 3 - Create Platforms
-#   connection: local
-#   hosts: localhost
-#   gather_facts: False
+- name: PLAY 3 - Create Platforms
+  connection: local
+  hosts: localhost
+  gather_facts: False
 
-#   roles:
-#     - role: create_platforms
-#       tags: platforms
+  roles:
+    - role: create_platforms
+      tags: platforms
 
-# - name: PLAY 4 - Create Device Types from templates
-#   connection: local
-#   hosts: localhost
-#   gather_facts: False
+- name: PLAY 4 - Create Device Types from templates
+  connection: local
+  hosts: localhost
+  gather_facts: False
 
-#   roles:
-#     - role: create_device_types
-#       tags: device_types
+  roles:
+    - role: create_device_types
+      tags: device_types
 
 - name: PLAY 5 - Create Devices from templates
   connection: local
