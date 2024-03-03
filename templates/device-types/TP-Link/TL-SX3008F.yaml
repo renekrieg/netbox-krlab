@@ -3,7 +3,7 @@ manufacturer: TP-Link
 model: TL-SX3008F
 slug: tp-link-tl-sx3008f
 part_number: TL-SX3008F
-comments: '[TP-Link tl-sg3424p](https://www.tp-link.com/us/business-networking/managed-switch/tl-sx3008f/#specifications)'
+comments: '[TP-Link tl-sx3008f](https://www.tp-link.com/us/business-networking/managed-switch/tl-sx3008f/#specifications)'
 is_full_depth: false
 u_height: 1
 console-ports:
@@ -16,19 +16,19 @@ power-ports:
     type: iec-60320-c14
     maximum_draw: 16
 interfaces:
-  - name: '1'
+  - name: 'Port1/0/1'
     type: 10gbase-x-sfpp
-  - name: '2'
+  - name: 'Port1/0/2'
     type: 10gbase-x-sfpp
-  - name: '3'
+  - name: 'Port1/0/3'
     type: 10gbase-x-sfpp
-  - name: '4'
+  - name: 'Port1/0/4'
     type: 10gbase-x-sfpp
-  - name: '5'
+  - name: 'Port1/0/5'
     type: 10gbase-x-sfpp
-  - name: '6'
+  - name: 'Port1/0/6'
     type: 10gbase-x-sfpp
-  - name: '7'
+  - name: 'Port1/0/7'
     type: 10gbase-x-sfpp
-  - name: '8'
+  - name: 'Port1/0/8'
     type: 10gbase-x-sfpp

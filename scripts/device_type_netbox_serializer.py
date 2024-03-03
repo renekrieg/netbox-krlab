@@ -8,6 +8,7 @@ for item in items:
   with open(item, 'r') as file:
     device = yaml.safe_load(file)
   device_type_list = []
+  #print(device['slug'])
   device_type_data = {
     key: value for key, value in device.items() if key not in   ['console-ports', 'interfaces', 'rear-ports', 'front-ports',  'power-ports']
     }

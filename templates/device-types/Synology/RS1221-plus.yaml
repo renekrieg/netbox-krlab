@@ -4,13 +4,13 @@ model: RS1221+
 slug: synology-rs1221-plus
 part_number: RS1221+
 u_height: 2
-is_full_depth: true
+is_full_depth: false
 comments: '[Synology RS1221+ Specs](https://global.synologydownload.com/download/Document/Hardware/DataSheet/RackStation/21-year/RS1221%2B/ger/Synology_RS1221%2B_Data_Sheet_ger.pdf)'
 console-ports:
   - name: Serial
     type: de-9
 power-ports:
-  - name: PSU 1
+  - name: PSU1
     type: iec-60320-c14
 interfaces:
   - name: LAN 1
