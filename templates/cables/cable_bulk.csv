@@ -1,0 +1,53 @@
+﻿side_a_device;side_a_type;side_a_name;side_b_device;side_b_type;side_b_name;type;status;color;length;length_unit;description;description
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/1;KR-PRV-PPAN-5;dcim.interface;1;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/2;KR-PRV-PPAN-5;dcim.interface;1;CAT6a;planned;;;m;->;KG AP
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/3;KR-PRV-PPAN-5;dcim.interface;3;CAT6a;planned;;;m;->;EG AP
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/4;KR-PRV-PPAN-5;dcim.interface;5;CAT6a;planned;;;m;->;OG AP
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/5;;dcim.interface;;CAT6a;planned;;;m;->;Gira X1
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/6;KR-PRV-PPAN-5;dcim.interface;2;CAT6a;planned;;;m;->;KG Gira G1
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/7;KR-PRV-PPAN-5;dcim.interface;4;CAT6a;planned;;;m;->;EG Gira G1
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/8;KR-PRV-PPAN-5;dcim.interface;6;CAT6a;planned;;;m;->;OG Gira G1
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/9;;dcim.interface;;CAT6a;planned;;;m;->;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/10;;dcim.interface;;CAT6a;planned;;;m;->;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/11;;dcim.interface;;CAT6a;planned;;;m;->;Alarm
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/12;;dcim.interface;;CAT6a;planned;;;m;->;Alarm Recorder
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/13;;dcim.interface;;CAT6a;planned;;;m;->;Alarm Recorder
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/14;KR-PRV-PPAN-5;dcim.interface;7;CAT6a;planned;;;m;->;AB Kamera Garage
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/15;KR-PRV-PPAN-5;dcim.interface;8;CAT6a;planned;;;m;->;AB Kamera
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/16;KR-PRV-PPAN-5;dcim.interface;9;CAT6a;planned;;;m;->;AB Kamera
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/17;KR-PRV-PPAN-5;dcim.interface;10;CAT6a;planned;;;m;->;AB Kamera
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/18;KR-PRV-PPAN-5;dcim.interface;11;CAT6a;planned;;;m;->;AB Kamera
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/19;KR-PRV-PPAN-5;dcim.interface;12;CAT6a;planned;;;m;->;AB Kamera
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/20;KR-PRV-PPAN-5;dcim.interface;13;CAT6a;planned;;;m;->;AB Kamera
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/21;KR-PRV-PPAN-1;dcim.interface;3;CAT6a;planned;;;m;->;KG Fitnesswand TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/22;KR-PRV-PPAN-1;dcim.interface;4;CAT6a;planned;;;m;->;KG Fitnesswand TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/23;KR-PRV-PPAN-1;dcim.interface;13;CAT6a;planned;;;m;->;KG Gaestezimmer TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/24;KR-PRV-PPAN-1;dcim.interface;14;CAT6a;planned;;;m;->;KG Gaestezimmer TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/25;KR-PRV-PPAN-1;dcim.interface;19;CAT6a;planned;;;m;->;KG Kinoraum TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/26;KR-PRV-PPAN-1;dcim.interface;20;CAT6a;planned;;;m;->;KG Kinoraum TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/27;KR-PRV-PPAN-2;dcim.interface;11;CAT6a;planned;;;m;->;EG Wohnzimmer TV 1
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/28;KR-PRV-PPAN-2;dcim.interface;12;CAT6a;planned;;;m;->;EG Wohnzimmer TV 2
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/29;KR-PRV-PPAN-2;dcim.interface;13;CAT6a;planned;;;m;->;EG Wohnzimmer TV 3
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/30;KR-PRV-PPAN-2;dcim.interface;14;CAT6a;planned;;;m;->;EG Wohnzimmer TV 4
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/31;KR-PRV-PPAN-3;dcim.interface;13;CAT6a;planned;;;m;->;OG Schlafzimmer TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/32;KR-PRV-PPAN-3;dcim.interface;14;CAT6a;planned;;;m;->;OG Schlafzimmer TV
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/33;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/34;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/35;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/36;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/37;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/38;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/39;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/40;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/41;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/42;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/43;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/44;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/45;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/46;;dcim.interface;;CAT6a;planned;;;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/47;KR-PRV-SW-2;dcim.interface;GigabitEthernet47;CAT6a;planned;;0.5;m;;
+KR-PRV-SW-1;dcim.interface;GigabitEthernet1/0/48;KR-PRV-SW-2;dcim.interface;GigabitEthernet48;CAT6a;planned;;0.5;m;;
+KR-PRV-SW-2;dcim.interface;TengigabitEthernet1/0/1;KR-PRV-SW-5;dcim.interface;Port1/0/7;Multimode Fiber (OM4);planned;;10;m;;KR-PRV-SW-5
+KR-PRV-SW-3;dcim.interface;TengigabitEthernet1/0/2;KR-PRV-SW-5;dcim.interface;Port1/0/8;Multimode Fiber (OM4);planned;;10;m;;KR-PRV-SW-5
+KR-PRV-SW-4;dcim.interface;TengigabitEthernet1/0/3;KR-PRV-SW-3;dcim.interface;sfp-sfpplus1;Multimode Fiber (OM4);planned;;3;m;;KR-PRV-SW-3
+KR-PRV-SW-5;dcim.interface;TengigabitEthernet1/0/4;;dcim.interface;;Multimode Fiber (OM4);planned;;;m;;
