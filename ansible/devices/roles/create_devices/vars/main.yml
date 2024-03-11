@@ -209,3 +209,20 @@ devices:
 #     position: 23
 #     face: Front
 #     status: active
+
+  - name: KR-PRV-NAS-1
+    device_type: synology-rs1221-plus
+    device_role: Server
+    site: KR-PRV
+    location: KR-PRV-Technikraum
+    rack: KR-PRV-RK-02
+    position: 18
+    face: Front
+    status: active
+
+  - name: KR-PRV-NAS-2
+    device_type: synology-ds1019-plus
+    device_role: Server
+    site: KR-PRV
+    location: KR-PRV-EG
+    status: active
